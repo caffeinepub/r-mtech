@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* R.Mtech dark theme */
+    --background: 0.1 0.006 240;
+    --foreground: 0.95 0.005 240;
+    --card: 0.17 0.01 240;
+    --card-foreground: 0.95 0.005 240;
+    --popover: 0.17 0.01 240;
+    --popover-foreground: 0.95 0.005 240;
+    --primary: 0.42 0.18 25;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.22 0.012 240;
+    --secondary-foreground: 0.95 0.005 240;
+    --muted: 0.18 0.01 240;
+    --muted-foreground: 0.72 0.01 240;
+    --accent: 0.42 0.18 25;
+    --accent-foreground: 1 0 0;
+    --destructive: 0.42 0.18 25;
+    --destructive-foreground: 1 0 0;
+    --border: 0.24 0.012 240;
+    --input: 0.24 0.012 240;
+    --ring: 0.42 0.18 25;
+
+    --brand-red: 0.42 0.18 25;
+    --brand-red-dark: 0.35 0.18 25;
+    --brand-bg: 0.1 0.006 240;
+    --brand-surface: 0.17 0.01 240;
+    --brand-text: 0.95 0.005 240;
+    --brand-muted: 0.72 0.01 240;
+
+    --chart-1: 0.42 0.18 25;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.14 0.01 240;
+    --sidebar-foreground: 0.95 0.005 240;
+    --sidebar-primary: 0.42 0.18 25;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.18 0.01 240;
+    --sidebar-accent-foreground: 0.95 0.005 240;
+    --sidebar-border: 0.24 0.012 240;
+    --sidebar-ring: 0.42 0.18 25;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
